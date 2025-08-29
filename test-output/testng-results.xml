@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-30T01:06:59 IST" name="Suite" finished-at="2025-08-30T01:07:08 IST" duration-ms="9237">
+    <groups>
+    </groups>
+    <test started-at="2025-08-30T01:06:59 IST" name="Test" finished-at="2025-08-30T01:07:08 IST" duration-ms="9237">
+      <class name="com.kart.automatedemokart.DemoKartTestSuite">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.kart.automatedemokart.DemoKartTestSuite@7dc3712]" started-at="2025-08-30T01:06:59 IST" name="setUp" finished-at="2025-08-30T01:07:01 IST" duration-ms="2122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initializeSoftAssert()[pri:0, instance:com.kart.automatedemokart.DemoKartTestSuite@7dc3712]" started-at="2025-08-30T01:07:01 IST" name="initializeSoftAssert" finished-at="2025-08-30T01:07:01 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeSoftAssert -->
+        <test-method signature="tc001_addToCartWithoutLogin()[pri:1, instance:com.kart.automatedemokart.DemoKartTestSuite@7dc3712]" started-at="2025-08-30T01:07:01 IST" name="tc001_addToCartWithoutLogin" finished-at="2025-08-30T01:07:01 IST" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc001_addToCartWithoutLogin -->
+        <test-method signature="tc002_loginWithValidCredentials()[pri:2, instance:com.kart.automatedemokart.DemoKartTestSuite@7dc3712]" started-at="2025-08-30T01:07:01 IST" name="tc002_loginWithValidCredentials" finished-at="2025-08-30T01:07:02 IST" depends-on-methods="com.kart.automatedemokart.DemoKartTestSuite.tc001_addToCartWithoutLogin" duration-ms="392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc002_loginWithValidCredentials -->
+        <test-method is-config="true" signature="initializeSoftAssert()[pri:0, instance:com.kart.automatedemokart.DemoKartTestSuite@7dc3712]" started-at="2025-08-30T01:07:01 IST" name="initializeSoftAssert" finished-at="2025-08-30T01:07:01 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeSoftAssert -->
+        <test-method is-config="true" signature="initializeSoftAssert()[pri:0, instance:com.kart.automatedemokart.DemoKartTestSuite@7dc3712]" started-at="2025-08-30T01:07:02 IST" name="initializeSoftAssert" finished-at="2025-08-30T01:07:02 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeSoftAssert -->
+        <test-method signature="tc003_welcomeBackToastOnProductPage()[pri:3, instance:com.kart.automatedemokart.DemoKartTestSuite@7dc3712]" started-at="2025-08-30T01:07:02 IST" name="tc003_welcomeBackToastOnProductPage" finished-at="2025-08-30T01:07:03 IST" depends-on-methods="com.kart.automatedemokart.DemoKartTestSuite.tc002_loginWithValidCredentials" duration-ms="1127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc003_welcomeBackToastOnProductPage -->
+        <test-method signature="tc004_addToCartAndValidateUrl()[pri:4, instance:com.kart.automatedemokart.DemoKartTestSuite@7dc3712]" started-at="2025-08-30T01:07:03 IST" name="tc004_addToCartAndValidateUrl" finished-at="2025-08-30T01:07:03 IST" depends-on-methods="com.kart.automatedemokart.DemoKartTestSuite.tc003_welcomeBackToastOnProductPage" duration-ms="415" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Phone 15 Pro Max has been added to your cart] but found [iPhone 15 Pro Max has been added to your cart]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Phone 15 Pro Max has been added to your cart] but found [iPhone 15 Pro Max has been added to your cart]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.kart.automatedemokart.DemoKartTestSuite.tc004_addToCartAndValidateUrl(DemoKartTestSuite.java:63)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc004_addToCartAndValidateUrl -->
+        <test-method is-config="true" signature="initializeSoftAssert()[pri:0, instance:com.kart.automatedemokart.DemoKartTestSuite@7dc3712]" started-at="2025-08-30T01:07:03 IST" name="initializeSoftAssert" finished-at="2025-08-30T01:07:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeSoftAssert -->
+        <test-method signature="tc005_checkoutAndOrderConfirmation()[pri:5, instance:com.kart.automatedemokart.DemoKartTestSuite@7dc3712]" started-at="2025-08-30T01:07:03 IST" name="tc005_checkoutAndOrderConfirmation" finished-at="2025-08-30T01:07:08 IST" duration-ms="4471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc005_checkoutAndOrderConfirmation -->
+        <test-method is-config="true" signature="initializeSoftAssert()[pri:0, instance:com.kart.automatedemokart.DemoKartTestSuite@7dc3712]" started-at="2025-08-30T01:07:03 IST" name="initializeSoftAssert" finished-at="2025-08-30T01:07:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeSoftAssert -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.kart.automatedemokart.DemoKartTestSuite@7dc3712]" started-at="2025-08-30T01:07:08 IST" name="afterClass" finished-at="2025-08-30T01:07:08 IST" duration-ms="252" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.kart.automatedemokart.DemoKartTestSuite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
