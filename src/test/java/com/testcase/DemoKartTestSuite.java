@@ -64,7 +64,7 @@ public class DemoKartTestSuite {
         String currentUrl = cartPage.isurlchanged("https://automatedemokart.vercel.app/cart");
         softAssert.assertEquals(currentUrl, "https://automatedemokart.vercel.app/cart");
         cartPage.addtocarttoast();
-        softAssert.assertEquals(cartPage.addtocarttoast(), "Phone 15 Pro Max has been added to your cart");
+        softAssert.assertEquals(cartPage.addtocarttoast(), "iPhone 15 Pro Max has been added to your cart");
         cartPage.clickoncheckout();
         softAssert.assertAll();
     }
