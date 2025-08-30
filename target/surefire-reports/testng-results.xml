@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-08-30T18:29:19 IST" name="Suite" finished-at="2025-08-30T18:30:59 IST" duration-ms="99216">
+    <groups>
+    </groups>
+    <test started-at="2025-08-30T18:29:19 IST" name="Test" finished-at="2025-08-30T18:30:59 IST" duration-ms="99216">
+      <class name="com.testcase.DemoKartTestSuite">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-30T18:29:19 IST" name="setUp" finished-at="2025-08-30T18:30:52 IST" duration-ms="92326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initializeSoftAssert()[pri:0, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-30T18:30:52 IST" name="initializeSoftAssert" finished-at="2025-08-30T18:30:52 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeSoftAssert -->
+        <test-method signature="tc001_addToCartWithoutLogin()[pri:1, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-30T18:30:52 IST" name="tc001_addToCartWithoutLogin" finished-at="2025-08-30T18:30:52 IST" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc001_addToCartWithoutLogin -->
+        <test-method is-config="true" signature="initializeSoftAssert()[pri:0, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-30T18:30:52 IST" name="initializeSoftAssert" finished-at="2025-08-30T18:30:52 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeSoftAssert -->
+        <test-method signature="tc002_loginWithValidCredentials()[pri:2, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-30T18:30:52 IST" name="tc002_loginWithValidCredentials" finished-at="2025-08-30T18:30:52 IST" depends-on-methods="com.testcase.DemoKartTestSuite.tc001_addToCartWithoutLogin" duration-ms="450" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc002_loginWithValidCredentials -->
+        <test-method is-config="true" signature="initializeSoftAssert()[pri:0, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-30T18:30:52 IST" name="initializeSoftAssert" finished-at="2025-08-30T18:30:52 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeSoftAssert -->
+        <test-method signature="tc003_welcomeBackToastOnProductPage()[pri:3, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-30T18:30:52 IST" name="tc003_welcomeBackToastOnProductPage" finished-at="2025-08-30T18:30:54 IST" depends-on-methods="com.testcase.DemoKartTestSuite.tc002_loginWithValidCredentials" duration-ms="1165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc003_welcomeBackToastOnProductPage -->
+        <test-method is-config="true" signature="initializeSoftAssert()[pri:0, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-30T18:30:54 IST" name="initializeSoftAssert" finished-at="2025-08-30T18:30:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeSoftAssert -->
+        <test-method signature="tc004_addToCartAndValidateUrl()[pri:4, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-30T18:30:54 IST" name="tc004_addToCartAndValidateUrl" finished-at="2025-08-30T18:30:54 IST" depends-on-methods="com.testcase.DemoKartTestSuite.tc003_welcomeBackToastOnProductPage" duration-ms="466" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Phone 15 Pro Max has been added to your cart] but found [iPhone 15 Pro Max has been added to your cart]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Phone 15 Pro Max has been added to your cart] but found [iPhone 15 Pro Max has been added to your cart]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.testcase.DemoKartTestSuite.tc004_addToCartAndValidateUrl(DemoKartTestSuite.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc004_addToCartAndValidateUrl -->
+        <test-method signature="tc005_checkoutAndOrderConfirmation()[pri:5, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-30T18:30:54 IST" name="tc005_checkoutAndOrderConfirmation" finished-at="2025-08-30T18:30:58 IST" duration-ms="3932" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc005_checkoutAndOrderConfirmation -->
+        <test-method is-config="true" signature="initializeSoftAssert()[pri:0, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-30T18:30:54 IST" name="initializeSoftAssert" finished-at="2025-08-30T18:30:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeSoftAssert -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-30T18:30:58 IST" name="afterClass" finished-at="2025-08-30T18:30:59 IST" duration-ms="329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.testcase.DemoKartTestSuite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -6,17 +6,18 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.kart.automatedemokart.DemoKartTestSuite">
+      <class name="com.testcase.DemoKartTestSuite">
         <methods>
           <include name="setUp"/>
+          <include name="tc005_checkoutAndOrderConfirmation"/>
+          <include name="initializeSoftAssert"/>
+          <include name="tc004_addToCartAndValidateUrl"/>
+          <include name="afterClass"/>
+          <include name="tc001_addToCartWithoutLogin"/>
           <include name="tc002_loginWithValidCredentials"/>
           <include name="tc003_welcomeBackToastOnProductPage"/>
-          <include name="tc001_addToCartWithoutLogin"/>
-          <include name="afterClass"/>
-          <include name="tc004_addToCartAndValidateUrl"/>
-          <include name="initializeSoftAssert"/>
         </methods>
-      </class> <!-- com.kart.automatedemokart.DemoKartTestSuite -->
+      </class> <!-- com.testcase.DemoKartTestSuite -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
