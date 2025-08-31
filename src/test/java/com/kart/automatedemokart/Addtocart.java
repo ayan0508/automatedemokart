@@ -30,7 +30,15 @@ public class Addtocart extends AbstractMethod {
 	}
 	public String addtocarttoast() {
 		WebElement buyNowToast= waitforelement(buyNowError);
-		return buyNowToast.findElement(By.xpath("./div/div[2]")).getText();	
+		//return buyNowToast.findElement(By.xpath("./div/div[2]")).getText();	
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+
+		// Get the nested element using JavaScript and return its text content
+		String toastText = (String) js.executeScript(
+		    "return arguments[0].querySelector('div > div:nth-child(2)').textContent;", 
+		    buyNowToast
+		);
+		return toastText;
 	}
 	public void clickoncheckout() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
