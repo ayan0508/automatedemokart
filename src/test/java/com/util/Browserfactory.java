@@ -31,8 +31,8 @@ public class Browserfactory {
 	                break;
 
 	            case "edge":
-	            	//System.setProperty("webdriver.edge.driver", "E:/Selenium/automatedemokart/driver/edgedriver_win32/msedgedriver.exe");
-	            	WebDriverManager.edgedriver().browserVersion("139").setup();
+	            	System.setProperty("webdriver.edge.driver", "E:/Selenium/automatedemokart/driver/edgedriver_win32/msedgedriver.exe");
+	            	//WebDriverManager.edgedriver().browserVersion("139").setup();
 	            	EdgeOptions options = new EdgeOptions();
 	            	options.addArguments("--headless");
 	            	options.addArguments("--disable-gpu"); // Often recommended with headless
