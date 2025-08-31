@@ -8,14 +8,10 @@
     <classes>
       <class name="com.testcase.DemoKartTestSuite">
         <methods>
-          <include name="setUp"/>
           <include name="tc005_checkoutAndOrderConfirmation"/>
+          <include name="setUp"/>
           <include name="initializeSoftAssert"/>
-          <include name="tc004_addToCartAndValidateUrl"/>
           <include name="afterClass"/>
-          <include name="tc001_addToCartWithoutLogin"/>
-          <include name="tc002_loginWithValidCredentials"/>
-          <include name="tc003_welcomeBackToastOnProductPage"/>
         </methods>
       </class> <!-- com.testcase.DemoKartTestSuite -->
     </classes>

@@ -2,56 +2,56 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-31T10:52:04 IST" name="Suite" finished-at="2025-08-31T10:52:12 IST" duration-ms="8086">
+  <suite started-at="2025-08-31T11:56:15 IST" name="Suite" finished-at="2025-08-31T11:56:24 IST" duration-ms="9313">
     <groups>
     </groups>
-    <test started-at="2025-08-31T10:52:04 IST" name="Test" finished-at="2025-08-31T10:52:12 IST" duration-ms="8086">
+    <test started-at="2025-08-31T11:56:15 IST" name="Test" finished-at="2025-08-31T11:56:24 IST" duration-ms="9313">
       <class name="com.testcase.DemoKartTestSuite">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T10:52:04 IST" name="setUp" finished-at="2025-08-31T10:52:06 IST" duration-ms="2117" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T11:56:15 IST" name="setUp" finished-at="2025-08-31T11:56:18 IST" duration-ms="2804" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="initializeSoftAssert()[pri:0, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T10:52:06 IST" name="initializeSoftAssert" finished-at="2025-08-31T10:52:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="initializeSoftAssert()[pri:0, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T11:56:18 IST" name="initializeSoftAssert" finished-at="2025-08-31T11:56:18 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeSoftAssert -->
-        <test-method signature="tc001_addToCartWithoutLogin()[pri:1, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T10:52:06 IST" name="tc001_addToCartWithoutLogin" finished-at="2025-08-31T10:52:06 IST" duration-ms="148" status="PASS">
+        <test-method signature="tc001_addToCartWithoutLogin()[pri:1, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T11:56:18 IST" name="tc001_addToCartWithoutLogin" finished-at="2025-08-31T11:56:18 IST" duration-ms="151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc001_addToCartWithoutLogin -->
-        <test-method signature="tc002_loginWithValidCredentials()[pri:2, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T10:52:06 IST" name="tc002_loginWithValidCredentials" finished-at="2025-08-31T10:52:06 IST" depends-on-methods="com.testcase.DemoKartTestSuite.tc001_addToCartWithoutLogin" duration-ms="256" status="PASS">
+        <test-method signature="tc002_loginWithValidCredentials()[pri:2, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T11:56:18 IST" name="tc002_loginWithValidCredentials" finished-at="2025-08-31T11:56:18 IST" depends-on-methods="com.testcase.DemoKartTestSuite.tc001_addToCartWithoutLogin" duration-ms="179" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc002_loginWithValidCredentials -->
-        <test-method is-config="true" signature="initializeSoftAssert()[pri:0, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T10:52:06 IST" name="initializeSoftAssert" finished-at="2025-08-31T10:52:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="initializeSoftAssert()[pri:0, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T11:56:18 IST" name="initializeSoftAssert" finished-at="2025-08-31T11:56:18 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeSoftAssert -->
-        <test-method signature="tc003_welcomeBackToastOnProductPage()[pri:3, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T10:52:06 IST" name="tc003_welcomeBackToastOnProductPage" finished-at="2025-08-31T10:52:07 IST" depends-on-methods="com.testcase.DemoKartTestSuite.tc002_loginWithValidCredentials" duration-ms="1081" status="PASS">
+        <test-method signature="tc003_welcomeBackToastOnProductPage()[pri:3, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T11:56:18 IST" name="tc003_welcomeBackToastOnProductPage" finished-at="2025-08-31T11:56:19 IST" depends-on-methods="com.testcase.DemoKartTestSuite.tc002_loginWithValidCredentials" duration-ms="1065" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc003_welcomeBackToastOnProductPage -->
-        <test-method is-config="true" signature="initializeSoftAssert()[pri:0, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T10:52:06 IST" name="initializeSoftAssert" finished-at="2025-08-31T10:52:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="initializeSoftAssert()[pri:0, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T11:56:18 IST" name="initializeSoftAssert" finished-at="2025-08-31T11:56:18 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeSoftAssert -->
-        <test-method signature="tc004_addToCartAndValidateUrl()[pri:4, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T10:52:07 IST" name="tc004_addToCartAndValidateUrl" finished-at="2025-08-31T10:52:08 IST" depends-on-methods="com.testcase.DemoKartTestSuite.tc003_welcomeBackToastOnProductPage" duration-ms="232" status="PASS">
+        <test-method signature="tc004_addToCartAndValidateUrl()[pri:4, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T11:56:19 IST" name="tc004_addToCartAndValidateUrl" finished-at="2025-08-31T11:56:19 IST" depends-on-methods="com.testcase.DemoKartTestSuite.tc003_welcomeBackToastOnProductPage" duration-ms="265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc004_addToCartAndValidateUrl -->
-        <test-method is-config="true" signature="initializeSoftAssert()[pri:0, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T10:52:07 IST" name="initializeSoftAssert" finished-at="2025-08-31T10:52:07 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="initializeSoftAssert()[pri:0, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T11:56:19 IST" name="initializeSoftAssert" finished-at="2025-08-31T11:56:19 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeSoftAssert -->
-        <test-method is-config="true" signature="initializeSoftAssert()[pri:0, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T10:52:08 IST" name="initializeSoftAssert" finished-at="2025-08-31T10:52:08 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="initializeSoftAssert()[pri:0, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T11:56:19 IST" name="initializeSoftAssert" finished-at="2025-08-31T11:56:19 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeSoftAssert -->
-        <test-method signature="tc005_checkoutAndOrderConfirmation()[pri:5, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T10:52:08 IST" name="tc005_checkoutAndOrderConfirmation" finished-at="2025-08-31T10:52:12 IST" duration-ms="4046" status="PASS">
+        <test-method signature="tc005_checkoutAndOrderConfirmation()[pri:5, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T11:56:19 IST" name="tc005_checkoutAndOrderConfirmation" finished-at="2025-08-31T11:56:23 IST" duration-ms="4134" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tc005_checkoutAndOrderConfirmation -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T10:52:12 IST" name="afterClass" finished-at="2025-08-31T10:52:12 IST" duration-ms="170" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.testcase.DemoKartTestSuite@6f01b95f]" started-at="2025-08-31T11:56:23 IST" name="afterClass" finished-at="2025-08-31T11:56:24 IST" duration-ms="678" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

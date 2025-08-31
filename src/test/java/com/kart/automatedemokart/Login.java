@@ -1,5 +1,6 @@
 package com.kart.automatedemokart;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -35,7 +36,9 @@ public class Login extends AbstractMethod {
 		waitforelement(loginForm);
 		usernameInput.sendKeys(username);
 		passwordInput.sendKeys(password);
-		loginSubmitButton.click();
+		JavascriptExecutor js= (JavascriptExecutor)driver;
+		js.executeScript("arguments[0].click();", loginSubmitButton);
+		//loginSubmitButton.click();
 		
 	}
 	public ProductlandingPage navigateToProductPage() {

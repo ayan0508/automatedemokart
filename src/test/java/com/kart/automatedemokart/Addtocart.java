@@ -29,7 +29,8 @@ public class Addtocart extends AbstractMethod {
 		return driver.getCurrentUrl();
 	}
 	public String addtocarttoast() {
-		return buyNowError.findElement(By.xpath("./div/div[2]")).getText();	
+		WebElement buyNowToast= waitforelement(buyNowError);
+		return buyNowToast.findElement(By.xpath("./div/div[2]")).getText();	
 	}
 	public void clickoncheckout() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
