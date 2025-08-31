@@ -2,7 +2,9 @@ package com.util;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -17,7 +19,11 @@ public class Browserfactory {
 
 	        switch (browserName.toLowerCase()) {
 	            case "chrome":
-	                driver = new ChromeDriver();
+	            	ChromeOptions chromeOptions = new ChromeOptions();
+	            	chromeOptions.addArguments("--headless");
+	            	chromeOptions.addArguments("--disable-gpu"); // Often recommended with headless
+	            	chromeOptions.addArguments("--window-size=1920,1080");
+	                driver = new ChromeDriver(chromeOptions);
 	                break;
 
 	            case "firefox":
@@ -27,7 +33,11 @@ public class Browserfactory {
 	            case "edge":
 	            	//System.setProperty("webdriver.edge.driver", "E:/Selenium/automatedemokart/driver/edgedriver_win32/msedgedriver.exe");
 	            	WebDriverManager.edgedriver().browserVersion("139").setup();
-	                driver = new EdgeDriver();
+	            	EdgeOptions options = new EdgeOptions();
+	            	options.addArguments("--headless");
+	            	options.addArguments("--disable-gpu"); // Often recommended with headless
+	            	options.addArguments("--window-size=1920,1080");
+	                driver = new EdgeDriver(options);
 	                break;
 
 	            default:
