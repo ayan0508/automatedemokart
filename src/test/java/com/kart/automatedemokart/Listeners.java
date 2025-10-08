@@ -26,7 +26,7 @@ public class Listeners implements ITestListener {
 	public void onTestFailure(ITestResult result)
 	{
 		Object testInstance = result.getInstance();
-        WebDriver driver = ((DemoKartTestSuite) testInstance).getDriver(); // assuming BaseTest has getDriver()
+        WebDriver driver = ((DemoKartTestSuite) testInstance).getDriver(); 
         String screenshotPath = ScreenshotUtil.captureScreenshot(driver, result.getName());
         test.get().fail(result.getThrowable());
         test.get().addScreenCaptureFromPath(screenshotPath);
